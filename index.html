@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Blob - Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header__logo">Blob Genie</h1>
+      <div class="container__mode">
+        <div class="container__hover">
+          <span class="container__label"></span>
+          <div class="container__light--mode"></div>
+          <div class="container__dark--mode"></div>
+        </div>
+      </div>
+      <main class="blob">
+        <div class="blob__generator">
+          <div class="blob__sample"></div>
+        </div>
+        <div class="blob__values">
+          <input
+            type="range"
+            min="1"
+            max="200"
+            value="0"
+            id="borderTopLeft"
+            class="slider"
+          />
+          <input type="text" value="50" class="borderValue borderTopLeft" />
+          <input
+            type="range"
+            min="1"
+            max="200"
+            value="0"
+            id="borderTopRight"
+            class="slider"
+          />
+          <input type="text" value="60" class="borderValue borderTopRight" />
+
+          <input
+            type="range"
+            min="1"
+            max="200"
+            value="0"
+            id="borderBottomRight"
+            class="slider"
+          />
+          <input type="text" value="60" class="borderValue borderBottomRight" />
+
+          <input
+            type="range"
+            min="1"
+            max="200"
+            value="0"
+            id="borderBottomLeft"
+            class="slider"
+          />
+
+          <input type="text" value="80" class="borderValue borderBottomLeft" />
+        </div>
+        <div class="blob__appearance">
+          <input type="text" id="color" class="blob__color" />
+          <button class="btn color--label">Blob Color</button>
+        </div>
+      </main>
+      <section class="generate">
+        <button class="btn btn__code">CSS Code</button>
+        <p class="generate__code"></p>
+        <p class="copyright">&copy; | 2022 | Francis Bittok</p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
